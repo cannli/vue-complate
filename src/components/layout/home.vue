@@ -9,8 +9,8 @@
           <el-row>
             <div class="breadcrumb-inner" v-show="!this.$route.meta.breadcrumb">
               <el-breadcrumb separator="/">
-                <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-                <el-breadcrumb-item v-for="item in this.$route.meta.breadcrumbArr" :to="{ path: item.path }">
+                <el-breadcrumb-item :to="{ path: '/' }">首页555</el-breadcrumb-item>
+                <el-breadcrumb-item v-for="item in this.$route.meta.breadcrumbArr" :key="item.path" :to="{ path: item.path }">
                   {{ item.name }}
                 </el-breadcrumb-item>
               </el-breadcrumb>
