@@ -167,6 +167,14 @@
                 pageMenu: 1,
                 type: 1
               },
+              {
+                position: '12',
+                isActive: true,
+                names: 'float',
+                link: '/overview/float',
+                pageMenu: 1,
+                type: 1
+              },
             ],
             names: '项目概况',
             pageMenu: 1,

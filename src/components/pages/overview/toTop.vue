@@ -1,7 +1,8 @@
 <template>
   <div class="components-container">
-    <!--  <code>{{$t('components.backToTopTips1')}}</code>
-      <code>{{$t('components.backToTopTips2')}}</code>-->
+    <h2>数字输入框组件</h2>
+    <!--  max是可输入的最大值  min是可输入的最小值  value是初始值-->
+    <modelToInput v-model="value" :max="10" :min="-5"></modelToInput>
     <el-row :gutter="50">
       <el-col :span="12" class="a-row">
         <div class="placeholder-container">
@@ -25,23 +26,23 @@
       <back-to-top transitionName="fade" :customStyle="myBackToTopStyle" :visibilityHeight="300"
                    :backPosition="50"></back-to-top>
     </el-tooltip>
+
   </div>
 </template>
 
 <script>
   import BackToTop from '@/components/common/BackToTop/index.vue'
-  import ElRow from 'element-ui/packages/row/src/row'
-  import ElCol from 'element-ui/packages/col/src/col'
+  import modelToInput from '@/components/modelToInput/index.vue'
 
   export default {
     name: 'backToTop-demo',
     components: {
-      ElCol,
-      ElRow,
-      BackToTop
+      BackToTop,
+      modelToInput
     },
     data () {
       return {
+        value: 0,
         myBackToTopStyle: {
           right: '50px',
           bottom: '50px',

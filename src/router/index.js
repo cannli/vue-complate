@@ -18,7 +18,8 @@ const userPrivilege = resolve => require(['../components/pages/userPrivilege/use
 const register = resolve => require(['../components/pages/register/register.vue'], resolve)
 // 分润
 const incomeDistribution = resolve => require(['../components/pages/financialManagement/incomeDistribution.vue'], resolve)
-
+//
+const float = resolve => require(['../components/pages/float/floatAndDiv.vue'],resolve)
 const router = new Router({
   // mode: 'history',
   // mode: 'history',
@@ -49,7 +50,8 @@ const router = new Router({
       children: [
         {path: '', redirect: 'tinymce'},
         {path: 'tinymce', component: tinymce},
-        {path: 'toTop', component: toTop, name}
+        {path: 'toTop', component: toTop},
+        {path: 'float', component: float}
       ]
     },
     {
