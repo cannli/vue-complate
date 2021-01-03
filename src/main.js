@@ -9,11 +9,12 @@ import './components/element/index.js'
 import App from './App'
 import './assets/icon/iconfont.js'
 import Message from '@/components/pages/message/index.js'
+import Directives from '@/components/directives/index.js'
 Vue.use(Message)
 Vue.use(ku)
 Vue.use(common)
 Vue.config.productionTip = false
-
+Vue.use(Directives)
 /* eslint-disable no-new */
 
 new Vue({

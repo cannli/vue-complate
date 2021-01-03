@@ -20,6 +20,8 @@ const register = resolve => require(['../components/pages/register/register.vue'
 const incomeDistribution = resolve => require(['../components/pages/financialManagement/incomeDistribution.vue'], resolve)
 //
 const float = resolve => require(['../components/pages/float/floatAndDiv.vue'],resolve)
+// 复制
+const copy = resolve => require(['../components/pages/copy/index.vue'], resolve)
 const router = new Router({
   // mode: 'history',
   // mode: 'history',
@@ -51,7 +53,8 @@ const router = new Router({
         {path: '', redirect: 'tinymce'},
         {path: 'tinymce', component: tinymce},
         {path: 'toTop', component: toTop},
-        {path: 'float', component: float}
+        {path: 'float', component: float},
+        {path: 'copy', component: copy}
       ]
     },
     {

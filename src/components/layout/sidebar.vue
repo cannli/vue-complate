@@ -175,6 +175,14 @@
                 pageMenu: 1,
                 type: 1
               },
+              {
+                position: '12',
+                isActive: true,
+                names: 'copy',
+                link: '/overview/copy',
+                pageMenu: 1,
+                type: 1
+              },
             ],
             names: '项目概况',
             pageMenu: 1,

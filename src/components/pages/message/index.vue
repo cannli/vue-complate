@@ -27,7 +27,7 @@ export default {
             notice = Object.assign({
                 _name
             }, DefaultOptions, notice)
-
+console.log(notice,'notice')
             this.notices.push(notice)
 
             setTimeout(() => {
