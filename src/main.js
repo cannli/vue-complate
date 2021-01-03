@@ -8,6 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './components/element/index.js'
 import App from './App'
 import './assets/icon/iconfont.js'
+import Message from '@/components/pages/message/index.js'
+Vue.use(Message)
 Vue.use(ku)
 Vue.use(common)
 Vue.config.productionTip = false

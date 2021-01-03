@@ -53,6 +53,13 @@
           background: '#e7eaf1'// 按钮的背景颜色 The background color of the button
         }
       }
+    },
+    mounted(){
+      this.$message({
+  type: 'success',
+  content: '成功信息提示',
+  duration: 3000
+})
     }
   }
 </script>
